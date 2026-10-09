@@ -1,8 +1,10 @@
 # GLADE
 
+**Play it:** [https://swift-grove-cliff-slate.grok.me](https://swift-grove-cliff-slate.grok.me)
+
 A Rare Friends maze runner. You play as your Generations NFT, chart beacons through a shifting maze, and spend RF to survive the night.
 
-Built for the [Rare Friends Vibeathon](https://github.com/spokesz/rarefriends-vibeathon). The submission window closed September 30, 2026, and winners are already posted, so this repository is the public source rather than a judged entry.
+Built for the [Rare Friends Vibeathon](https://github.com/spokesz/rarefriends-vibeathon). The submission window closed September 30, 2026, and winners are already posted, so this repository is the public source rather than a judged entry. The link above is the playable version.
 
 **Builder:** Steven Reynolds · [X @Sharpbigred](https://x.com/Sharpbigred)
 
@@ -10,11 +12,15 @@ Built for the [Rare Friends Vibeathon](https://github.com/spokesz/rarefriends-vi
 
 **One sentence:** GLADE is an isometric maze where your Rare Friend charts beacons before night, hides beside a giant Rare coin, and spends RF on flares, holds, and masks.
 
+## Play
+
+Open [https://swift-grove-cliff-slate.grok.me](https://swift-grove-cliff-slate.grok.me) on a phone or computer. Sign in with MetaMask on Robinhood Chain, or pick a sample Friend, then start a run.
+
 ## Stack
 
 FriendSDK from [rarefriends/friendsdk](https://github.com/rarefriends/friendsdk). React canvas game. Wallet play uses MetaMask on Robinhood Chain. The first level shows purchases for free so you can see them. Later levels charge RF.
 
-## Run
+## Run from source
 
 ```bash
 npm install github:rarefriends/friendsdk react react-dom
@@ -54,4 +60,4 @@ The first level grants these without a transaction so you can see them. Every ot
 
 ## Checks
 
-`tsc --noEmit` is clean on the game sources. Known limits: the playable host is the FriendSDK page, not a separate static GitHub Pages build. Purchases on levels after the first are real RF burns, not a simulated ledger.
+`tsc --noEmit` is clean on the game sources. The playable build is [https://swift-grove-cliff-slate.grok.me](https://swift-grove-cliff-slate.grok.me). Purchases on levels after the first are real RF burns, not a simulated ledger.
