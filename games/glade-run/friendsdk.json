@@ -1,0 +1,83 @@
+{
+  "id": "glade",
+  "title": "GLADE",
+  "version": "1.0.0",
+  "client": "index.tsx",
+  "display": { "minAspectRatio": "9:16", "maxAspectRatio": "16:9" },
+  "currency": "RF",
+  "items": {},
+  "actions": {
+    "buyFlare": {
+      "type": "purchase",
+      "label": "Flare",
+      "description": "Spend 5 RF. Gain a pulse and push the corrupted Friends back.",
+      "price": "5",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "holdMaze": {
+      "type": "purchase",
+      "label": "Hold this maze",
+      "description": "Spend 10 RF. The walls stop shifting for the rest of this run.",
+      "price": "10",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "buyQuiet": {
+      "type": "purchase",
+      "label": "Quiet",
+      "description": "Spend 8 RF. The corrupted Friends lose you and wander until the next day.",
+      "price": "8",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "buyScout": {
+      "type": "purchase",
+      "label": "Scout",
+      "description": "Spend 6 RF. The minimap fills in, including the exit.",
+      "price": "6",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "buyCowl": {
+      "type": "purchase",
+      "label": "Night Cowl",
+      "description": "Spend 4 RF. A black cowl with pointed ears and white eyes.",
+      "price": "4",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "buyGrin": {
+      "type": "purchase",
+      "label": "Red Grin",
+      "description": "Spend 6 RF. A pale mask, green hair, and a red smile.",
+      "price": "6",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "buySkull": {
+      "type": "purchase",
+      "label": "Skull",
+      "description": "Spend 8 RF. A bone mask with black eyes.",
+      "price": "8",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "buyVisor": {
+      "type": "purchase",
+      "label": "Visor",
+      "description": "Spend 10 RF. A gold plate with a dark eye slit.",
+      "price": "10",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "buyChance": {
+      "type": "purchase",
+      "label": "Second chance",
+      "description": "Spend 15 RF. Once this run, dying returns you to the Glade.",
+      "price": "15",
+      "maxQuantity": 1,
+      "loaned": true
+    }
+  }
+}

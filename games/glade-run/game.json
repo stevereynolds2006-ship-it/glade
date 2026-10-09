@@ -1,0 +1,8 @@
+{
+  "name": "GLADE",
+  "consumable": "Unused. This maze does not stake or pay RF.",
+  "price": "1000000000000000000",
+  "outcomes": [
+    { "name": "Unused example reward", "chanceBps": 10000, "reward": "1000000000000000000" }
+  ]
+}
