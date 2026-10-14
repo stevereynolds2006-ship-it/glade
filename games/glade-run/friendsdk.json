@@ -66,8 +66,32 @@
     "buyVisor": {
       "type": "purchase",
       "label": "Visor",
-      "description": "Spend 10 RF. A gold plate with a dark eye slit.",
-      "price": "10",
+      "description": "Spend $1. A gold plate with a dark eye slit.",
+      "price": "1",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "buyWrap": {
+      "type": "purchase",
+      "label": "Wraps",
+      "description": "Spend $1. Pale bandages with dark eye holes.",
+      "price": "1",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "buyBeak": {
+      "type": "purchase",
+      "label": "Beak",
+      "description": "Spend $1. A long beak and round dark eyes.",
+      "price": "1",
+      "maxQuantity": 1,
+      "loaned": true
+    },
+    "buyHorns": {
+      "type": "purchase",
+      "label": "Horns",
+      "description": "Spend $1. A dark mask with pale horns.",
+      "price": "1",
       "maxQuantity": 1,
       "loaned": true
     },
