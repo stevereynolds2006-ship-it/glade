@@ -2,23 +2,33 @@
 
 **Play it:** [https://swift-grove-cliff-slate.grok.me](https://swift-grove-cliff-slate.grok.me)
 
-A Rare Friends maze runner. You play as your Generations NFT, chart beacons through a shifting maze, and spend RF to survive the night.
-
-Built for the [Rare Friends Vibeathon](https://github.com/spokesz/rarefriends-vibeathon). The submission window closed September 30, 2026, and winners are already posted, so this repository is the public source rather than a judged entry. The link above is the playable version.
+A Rare Friends maze runner. You play as your Generations NFT, chart beacons through a shifting maze, and spend RF or USDG to open later boards.
 
 **Builder:** Steven Reynolds · [X @Sharpbigred](https://x.com/Sharpbigred)
 
-**Category:** Character Spotlight. The selected Rare Friend is the runner. Corrupted copies of that same Friend hunt the halls.
-
-**One sentence:** GLADE is an isometric maze where your Rare Friend charts beacons before night, hides beside a giant Rare coin, and spends RF on flares, holds, and masks.
+**Category:** Character Spotlight. The selected Rare Friend is the runner. Corrupted copies of that same Friend hunt the halls. A mimic wears your face until you get close.
 
 ## Play
 
 Open [https://swift-grove-cliff-slate.grok.me](https://swift-grove-cliff-slate.grok.me) on a phone or computer. Sign in with MetaMask on Robinhood Chain, or pick a sample Friend, then start a run.
 
+The first board is free. Every other board is $0.99, paid in RF or USDG. Once a board is paid, it stays open on this device.
+
+## How to play
+
+Move with the stick, WASD, or the arrows. A is left, D is right. Tap a tile to run there.
+
+- **Day.** Doors are open. Stand on a beacon until it charts.
+- **Walls.** The maze rebuilds every 20 seconds. The first three boards stay wide. Later boards add more wall.
+- **Dusk.** Get back to the center.
+- **Night.** Corrupted Friends hunt, and a mimic may slip its face and lunge. A giant Rare coin rises in the center. Stay with it until day.
+- Chart five beacons and the exit opens. Step on it.
+
+Open the menu to pause. From the main menu you can continue the run or pick another level.
+
 ## Stack
 
-FriendSDK from [rarefriends/friendsdk](https://github.com/rarefriends/friendsdk). React canvas game. Wallet play uses MetaMask on Robinhood Chain. The first level shows purchases for free so you can see them. Later levels charge RF.
+FriendSDK from [rarefriends/friendsdk](https://github.com/rarefriends/friendsdk). React canvas game. Wallet play uses MetaMask on Robinhood Chain.
 
 ## Run from source
 
@@ -26,38 +36,3 @@ FriendSDK from [rarefriends/friendsdk](https://github.com/rarefriends/friendsdk)
 npm install github:rarefriends/friendsdk react react-dom
 npx friendsdk dev games/glade-run
 ```
-
-You need a wallet holding a Generations NFT, generation 1 or higher, on Robinhood mainnet.
-
-## How to play
-
-Move with the stick, WASD, or the arrows. A is left, D is right. Tap a tile to run there.
-
-- **Day.** Doors are open. Stand on a beacon until it charts. The first day lasts about 108 seconds and later levels are shorter.
-- **Walls.** The maze rebuilds every 20 seconds.
-- **Dusk.** Get back to the Glade.
-- **Night.** Corrupted Friends hunt. A giant Rare coin rises in the Glade. Stay with it until day.
-- Chart five beacons and the exit opens. Step on it.
-- If a corrupted Friend catches you, the run ends unless you bought a second chance.
-
-Open the menu to pause. From the main menu you can continue the run or pick another level.
-
-## RF spends
-
-| Action | RF |
-|---|---|
-| Flare | 5 |
-| Hold this maze | 10 |
-| Quiet | 8 |
-| Scout | 6 |
-| Night Cowl | 4 |
-| Red Grin | 6 |
-| Skull | 8 |
-| Visor | 10 |
-| Second chance | 15 |
-
-The first level grants these without a transaction so you can see them. Every other level asks the wallet to burn that much RF.
-
-## Checks
-
-`tsc --noEmit` is clean on the game sources. The playable build is [https://swift-grove-cliff-slate.grok.me](https://swift-grove-cliff-slate.grok.me). Purchases on levels after the first are real RF burns, not a simulated ledger.
